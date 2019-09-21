@@ -67,7 +67,9 @@ public class KafkaApplication {
 		producer.sendGreetingMessage(new Greeting("Greetings", "World!"));
 		listener.greetingLatch.await(10, TimeUnit.SECONDS);
 
-		context.close();
+//		context.close();
+		
+//		SpringApplication.run(KafkaApplication.class, args);
 	}
 
 	@Bean
